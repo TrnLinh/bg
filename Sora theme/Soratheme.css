@@ -106,7 +106,7 @@ input:checked + .slider,
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
