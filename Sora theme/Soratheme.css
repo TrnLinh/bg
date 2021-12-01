@@ -640,7 +640,7 @@ div[onclick="windows[2].switchTab(3)"]:after {
 
 #hudClassIcon {
   display: block;
-  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
+  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
   position: fixed;
   bottom: 20px;
   left: 380px;
