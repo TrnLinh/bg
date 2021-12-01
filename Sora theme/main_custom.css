@@ -1,0 +1,44 @@
+/* a small css for Soraa#4806 make by TrnLinh#7349 */
+
+/*pls don't change anything bellow */
+@import url();
+/*pls dont change anything above */
+:root {
+  --light-purple: #cc94ff;
+  --purple: #a358ff;
+  --black: black;
+  --white: white;
+  --trans-puple: #a358ff75;
+  --trans: rgb(0 0 0 / 36%);
+  --gradient: linear-gradient(to right, #8c0bff, #7f89fb);
+  --purple-blueish: #897ae9f7;
+}
+* {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 600;
+}
+/*
+ change avatar 
+ replace the link inside url to change avatar/img
+ 
+ */
+#profilePicM {
+  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+}
+#menuUsernameContainer {
+  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+}
+#hudClassIcon {
+  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
+}
+
+/*
+This css was made by TrnLinh
+If you want to make an update or fix issues please contact me:
+discord: TrnLinh#7349
+KrunkerIgn: hoanglinh0109
+
+Thank Abyy#9768 for this comment lol 
+*/
+
+/*feel free to edit anything*/
