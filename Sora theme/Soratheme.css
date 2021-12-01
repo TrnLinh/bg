@@ -50,7 +50,9 @@ div[data-icon="star_border"],
 #ammoMax,
 #ammoIcon,
 #maxHP,
-#challIcon {
+#challIcon,
+.endAHolder
+ {
   display: none !important;
 }
 
@@ -72,7 +74,9 @@ div[data-icon="star_border"],
 .creatorCodeBtn,
 input:checked + .slider,
 .loadoutBtn,
-#startServBtn {
+#startServBtn,
+#hostMenuBtn,
+input:checked + .slider2 {
   background-color: var(--purple) !important;
 }
 .updDisN[style="background-color: var(--red);"],
@@ -106,7 +110,7 @@ input:checked + .slider,
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -419,7 +423,8 @@ a[onclick="showWindow(13)"] {
 .settingsHeader,
 .settingTab,
 .mapListCat,
-.hostHeader {
+.hostHeader,
+.serverHeader {
   background: transparent;
 }
 .hostHeader {
@@ -436,8 +441,16 @@ a[onclick="showWindow(13)"] {
   background-color: var(--trans);
   border-radius: 6px;
 }
-input[type="color"] {
+input[type="color"],
+.quickJoin {
   border: 4px solid var(--light-purple) !important;
+}
+.slide {
+    border: 15px solid #25252500;
+}
+.purejscarousel-btn {    
+    background-color: var(--trans) !important;
+
 }
 
 /*class pick menu*/
@@ -640,7 +653,7 @@ div[onclick="windows[2].switchTab(3)"]:after {
 
 #hudClassIcon {
   display: block;
-  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
+  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
   position: fixed;
   bottom: 20px;
   left: 380px;
@@ -679,4 +692,27 @@ div[onclick="windows[2].switchTab(3)"]:after {
   border: 2px solid var(--light-purple);
   background-color: var(--purple);
   width: max-content;
+}
+
+
+/*end game board*/
+.tabHeader.selected {
+    color: var(--light-purple);
+    border-bottom: 0px solid transparent;
+}
+#tabHolder {
+   background-color: var(--trans-puple);
+   border: 4px solid var(--light-purple);
+}
+.tabHeader:hover {
+    color: #fff;
+    border-bottom: 0px solid #fff;
+}
+.endCard {
+
+    background-color: var(--purple);
+    border: 4px solid var(--light-purple);
+}
+.endTablePfp{
+  border:3px solid var(--light-purple);
 }
