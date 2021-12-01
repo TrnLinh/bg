@@ -23,13 +23,13 @@
  
  */
 #profilePicM {
-  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
 }
 #menuUsernameContainer {
   background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
 }
 #hudClassIcon {
-  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
+  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
 }
 
 /*
