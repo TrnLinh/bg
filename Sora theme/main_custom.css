@@ -74,7 +74,9 @@ div[data-icon="star_border"],
 .creatorCodeBtn,
 input:checked + .slider,
 .loadoutBtn,
-#startServBtn {
+#startServBtn,
+#hostMenuBtn,
+input:checked + .slider2 {
   background-color: var(--purple) !important;
 }
 .updDisN[style="background-color: var(--red);"],
@@ -421,7 +423,8 @@ a[onclick="showWindow(13)"] {
 .settingsHeader,
 .settingTab,
 .mapListCat,
-.hostHeader {
+.hostHeader,
+.serverHeader {
   background: transparent;
 }
 .hostHeader {
@@ -438,8 +441,16 @@ a[onclick="showWindow(13)"] {
   background-color: var(--trans);
   border-radius: 6px;
 }
-input[type="color"] {
+input[type="color"],
+.quickJoin {
   border: 4px solid var(--light-purple) !important;
+}
+.slide {
+    border: 15px solid #25252500;
+}
+.purejscarousel-btn {    
+    background-color: var(--trans) !important;
+
 }
 
 /*class pick menu*/
