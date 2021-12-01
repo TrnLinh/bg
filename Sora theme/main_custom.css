@@ -1,13 +1,8 @@
-/* a small css for Soraa#4806 make by TrnLinh#7349 */
-
-/*pls don't change anything bellow */
-@import url(https://trnlinh.github.io/bg/Sora%20theme/Soratheme.css);
-/*pls dont change anything above */
 :root {
   --light-purple: #cc94ff;
   --purple: #a358ff;
   --black: black;
-  --white: white;
+  --white: #fff;
   --trans-puple: #a358ff75;
   --trans: rgb(0 0 0 / 36%);
   --gradient: linear-gradient(to right, #8c0bff, #7f89fb);
@@ -17,28 +12,696 @@
   font-family: "Balsamiq Sans", cursive;
   font-weight: 600;
 }
-/*
- change avatar 
- replace the link inside url to change avatar/img
- 
- */
+
+a {
+  cursor: pointer;
+  text-shadow: 0 0 0 transparent !important;
+  color: var(--light-purple) !important;
+  text-decoration: none;
+  pointer-events: all;
+}
+/*stuff*/
+.pfpAction,
+#aHolder,
+#aMerger,
+#tlInfHold,
+#newsHolder,
+#mainLogo,
+#seasonLabel,
+#menuAccountUsername,
+.verticalSeparator,
+#editorBtnM,
+.menuSocialB,
+.menuItem .menuItemTitle,
+#voiceDisplay,
+#faceItIconM,
+#rankedSoonTm::before,
+#rankedSoonTm,
+.terms,
+.verticalSeparatorInline,
+#menuClassSubtext,
+#menuClassNameTag,
+.selectorItem .selectorIcon,
+.itemOwn,
+.selctInfoBtn,
+div[data-icon="star_border"],
+#timerIcon,
+#healthBar,
+#ammoMax,
+#ammoIcon,
+#maxHP,
+#challIcon,
+.endAHolder
+ {
+  display: none !important;
+}
+
+/*profile*/
+/* Top Bar*/
+#menuWindow {
+  border-radius: 5px;
+  font-size: 20px;
+  background: url(https://github.com/TrnLinh/bg/blob/main/img/SoraTheme.jpg?raw=true) !important;
+  background-size: cover !important;
+  box-shadow: 10px 10px var(--light-purple) !important;
+}
+.material-icons[style="color:#fbc02d;font-size:42px;vertical-align:bottom"],
+.material-icons[style="color:#96ff50;font-size:42px;vertical-align:bottom"] {
+  color: var(--purple) !important;
+}
+.updDisN,
+.subPassChg,
+.creatorCodeBtn,
+input:checked + .slider,
+.loadoutBtn,
+#startServBtn {
+  background-color: var(--purple) !important;
+}
+.updDisN[style="background-color: var(--red);"],
+.settingsBtn {
+  background-color: var(--light-purple) !important;
+}
+
+.bigMenTabs {
+  background-color: var(--trans);
+}
+.bigMenTab:hover {
+  border-color: var(--light-purple);
+  background-color: var(--trans-puple);
+}
+/* Your Account*/
+.setHed,
+.setHedS {
+  border: 4px solid rgb(255 255 255 / 0%);
+  background-color: rgb(80 80 80 / 0%);
+  color: #fff;
+}
+.setHed:hover {
+  background-color: transparent;
+}
+
+#menuWindow.dark div {
+  color: #fff;
+}
 #profilePicM {
-  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+  border: 4px solid #fac !important;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blurred {
+  filter: grayscale(0) opacity(1);
+  image-rendering: auto !important;
+}
+#profilePicM > img {
+  opacity: 0;
+}
+.setBodH {
+  background-color: transparent;
+  transition: 0.2s;
+}
+.setBodH:hover {
+  background-color: var(--trans-puple);
+  box-shadow: inset 0px 0px 0px 2px var(--purple);
+  color: var(--white) !important;
+}
+.setBodH > .settName,
+.setBodH > .settNameSmall {
+  color: var(--white) !important;
+}
+.floatR {
+  color: var(--white) !important;
+}
+a[onclick="showWindow(13)"] {
+  color: var(--purple);
+}
+
+/*Xp Bar*/
+.xpBar {
+  background-color: var(--trans);
+}
+.xpBarB,
+.chalXPBarCm {
+  height: 100%;
+  background-image: var(--gradient);
+}
+
+/* Stats Table */
+.pSt {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  border: 2px solid rgb(0 0 0 / 0%) !important;
+  border-radius: 4px;
+  width: 140px;
+  background-color: var(--trans);
+  text-shadow: 0 0px !important;
+  transition: 0.2s;
+}
+.pSt:hover {
+  background-color: var(--trans-puple);
+  transform: scale(1.2);
+  border-color: var(--purple) !important;
+}
+.pSt > strong {
+  color: var(--light-purple);
+}
+
+/* Logout */
+.menuLink {
+  color: var(--light-purple);
+}
+.menuLink:hover {
+  color: var(--white);
+}
+
+/*end Profile*/
+
+/* Menu */
+
+/*top left*/
+.headerBar {
+  background-color: var(--purple);
+  border: 4px solid var(--light-purple);
+  height: max-content;
+}
+#mLevelCont {
+  height: 170px !important;
+  display: flex;
+  background: var(--purple-blueish);
+  align-items: center;
+}
+#signedInHeaderBar {
+  height: max-content;
+  width: max-content;
+}
+
+.progressBarInner,
+.clsXPBarC {
+  background-image: var(--gradient);
+}
+.buttonO {
+  border: 4px solid var(--light-purple) !important;
+}
+#signedInHeaderBar > div[style="display:inline-block;"] {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
 }
 #menuUsernameContainer {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  display: block;
+  background-size: cover;
   background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
+  border-radius: 50%;
+  border: 4px solid var(--light-purple);
 }
+
+#menuUsernameContainer > img {
+  opacity: 0;
+}
+#menuMiniProfilePic {
+  vertical-align: top;
+  display: block;
+  width: 100px;
+  height: 100px;
+  image-rendering: optimizequality !important;
+  margin-right: 1px;
+  border-radius: 50%;
+}
+
+.krInfo {
+  margin-top: 0px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.junkInfo {
+  margin-top: 0px;
+  grid-column: 2/3;
+  grid-row: -3/-2;
+}
+.progressBar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  margin: 0px 10px 0px 0px;
+}
+#mLevelContV:before {
+  content: "LV: ";
+  font-size: 20px;
+}
+/* top right*/
+.headerBarRight {
+  right: 0;
+  border-radius: 0 0 0 6px;
+  padding: 4px 1px 10px 16px;
+  width: 15vh;
+}
+
+/*mainMenu*/
+#menuItemContainer {
+  position: absolute;
+  left: 50%;
+  top: initial;
+  width: 1000px;
+  display: flex;
+  background: var(--purple);
+  border: 4px solid var(--light-purple);
+  height: 10vh;
+  align-items: center;
+  flex-direction: row;
+  bottom: 0 !important;
+  border-radius: 5px;
+  transform: translate(-50%, -1vh);
+  z-index: 3 !important;
+}
+.material-icons-outlined {
+  color: var(--light-purple) !important;
+}
+
+.menuItem:hover {
+  transform: scale(1) !important;
+  transform: translateY(-20px) !important;
+}
+
+/*chat*/
+#uiBase.onMenu #chatHolder {
+  left: 20px;
+  bottom: 20px;
+}
+#uiBase.onGame #chatHolder {
+  left: 20px;
+  bottom: 20px;
+}
+
+#chatInputHolder {
+  background-color: var(--purple) !important;
+  border: 4px solid var(--light-purple);
+}
+#chatInput {
+  background-color: rgb(0 0 0 / 29%);
+  border: 4px solid var(--light-purple);
+}
+#chatList {
+  background-color: transparent !important;
+}
+.chatItem {
+  background: var(--purple);
+  padding: 10px;
+  border: 4px solid var(--light-purple);
+  border-radius: 5px;
+}
+
+/*semi bar*/
+.buttonP,
+.buttonR,
+.buttonO,
+.buttonPI {
+  border: 4px solid var(--light-purple) !important;
+}
+
+.button.small {
+  background: var(--purple) !important;
+  color: white;
+}
+.button.small:hover {
+  background-color: var(--trans-puple) !important;
+  color: #a7aba86e;
+}
+#subLogoButtons {
+  position: absolute;
+  bottom: 12vh;
+  left: 50%;
+  transform: translate(-78%, 0px) scale(0.95);
+}
+/*term*/
+#termsInfo {
+  content: url(https://github.com/TrnLinh/bg/blob/main/img/SoraTheme.png?raw=true);
+  height: 320px;
+  width: auto;
+  background-color: rgb(0 0 0 / 0%);
+  padding: 0px;
+  transform: translateX(10px);
+  z-index: -1 !important;
+}
+#mapInfo {
+  position: fixed;
+  bottom: 20px;
+  z-index: 2;
+}
+
+/*class pick*/
+#menuClassName {
+  text-shadow: 0px 0px 20px black !important;
+}
+#menuClassContainer > #classPreviewCanvas {
+  opacity: 0;
+  transition: 0.5s;
+}
+#menuClassContainer:hover > #classPreviewCanvas {
+  opacity: 1;
+}
+.bigShadowT {
+  text-shadow: 0px 0px 20px black !important;
+}
+#customizeButton {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+  font-size: 27px !important;
+  pointer-events: all;
+  padding-bottom: 22px;
+  border: 4px solid var(--light-purple) !important;
+  background: var(--purple);
+}
+#customizeButton:hover {
+  background: var(--trans-puple);
+  color: #ffffffbd !important;
+}
+#menuClassContainer {
+  position: absolute;
+  right: initial;
+  top: initial;
+  left: 50%;
+  bottom: 8.5vh;
+  transform: scale(0.8);
+  z-index: 99999 !important;
+  margin-left: 37px;
+}
+
+/*challenge board*/
+.chalCard,
+.chalImgC,
+.chalRews {
+  background: var(--trans-puple) !important;
+  border: 4px solid var(--light-purple) !important;
+}
+.chalRews {
+  border: 0 !important;
+}
+/*game mode*/
+#menuWindow {
+  width: 1460px !important;
+}
+
+/*setting*/
+.settingsHeader,
+.settingTab,
+.mapListCat,
+.hostHeader {
+  background: transparent;
+}
+.hostHeader {
+  border: 0;
+  box-shadow: 0 0 transparent;
+}
+.setSugBox2 {
+  border: 4px solid var(--light-purple);
+  background-color: var(--trans);
+  width: 344px;
+  transition: 0.5s;
+}
+#settingsTabLayout {
+  background-color: var(--trans);
+  border-radius: 6px;
+}
+input[type="color"] {
+  border: 4px solid var(--light-purple) !important;
+}
+
+/*class pick menu*/
+#menuWindow[style="overflow-y: auto; width: 810px;"] {
+  width: 1000px !important;
+}
+#selectorContainer,
+.selectorItem:hover {
+  background-color: transparent;
+}
+.selectedItem {
+  border: 3px solid var(--light-purple) !important;
+  background-color: var(--purple) !important;
+}
+.selectorItem {
+  background-color: rgb(215 46 46 / 0%);
+  border: 0px solid rgba(255, 255, 255, 0.6);
+  height: 40px;
+  padding-right: 10px;
+}
+.selectorItem:hover,
+.selectorItem:focus {
+  transform: scale(1.2);
+  z-index: 9999 !important;
+  color: var(--purple);
+  background-color: var(--trans-puple);
+  border: 4px solid var(--light-purple);
+}
+.selectorLabel {
+  color: #fff;
+  text-shadow: 0 0 black;
+}
+.selectorItem:hover > .selectorLabel {
+  color: var(--light-purple) !important;
+}
+div[onclick="windows[2].switchTab(0)"]:after,
+div[onclick="windows[2].switchTab(1)"]:after,
+div[onclick="windows[2].switchTab(2)"]:after,
+div[onclick="windows[2].switchTab(3)"]:after {
+  font-family: material-icons;
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 12px;
+  color: var(--light-purple);
+}
+
+div[onclick="windows[2].switchTab(0)"]:after {
+  content: "people";
+}
+div[onclick="windows[2].switchTab(1)"]:after {
+  content: "grid_view";
+  margin-left: 120px;
+}
+div[onclick="windows[2].switchTab(2)"]:after {
+  content: "dashboard_customize";
+  margin-left: 120px;
+}
+div[onclick="windows[2].switchTab(3)"]:after {
+  content: "more_horiz";
+}
+
+/*class selector*/
+
+.classCard {
+  text-shadow: 0 0 black;
+  filter: drop-shadow(0 0 0rem #000000);
+  background-color: #b5b5b500;
+}
+.classWeap,
+.itemSea {
+  opacity: 0;
+}
+
+/*layout*/
+
+.custContainer {
+  background-color: rgb(0 0 0 / 0%);
+  border: 3px solid rgb(255 255 255 / 0%);
+  box-shadow: inset 0 0 50px 0 rgb(0 0 0 / 0%);
+  opacity: 1;
+  transition: 0.2s;
+}
+.custContainer:hover {
+  background-color: var(--trans-puple);
+}
+.blackShad {
+  text-shadow: 0 0 black;
+}
+/* weapons pick */
+.itemCnt[data-badge]:after {
+  background-color: rgb(52 18 18 / 0%);
+}
+#itemSearchH,
+.skinCard {
+  background-color: transparent;
+}
+#loadoutName,
+#customizeContainer {
+  z-index: -2 !important;
+}
+/*Timer*/
+
+#timerDisplay {
+  background-color: var(--purple) !important;
+  border: 4px solid var(--light-purple);
+  position: fixed;
+  left: 50% !important;
+  bottom: 20px !important;
+  transform: translate(-50%, 0%);
+}
+#timerVal {
+  font-size: 40px;
+}
+/* hud main */
+.weapKey {
+  display: none;
+}
+.weapIcon {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  right: 0px;
+  bottom: 120px;
+  opacity: 0 !important;
+  transition-duration: 0.25s;
+}
+.weapIcon[style="opacity: 1;"] {
+  opacity: 1 !important;
+}
+.weapIcon[style="opacity: 1; margin-right: 25px;"] {
+  opacity: 1 !important;
+}
+.weapIcon[style="opacity: 0.7;"] {
+  transform: translate(-50%, -50%) translateX(100px);
+}
+.weapIcon[style="opacity: 0.7; margin-right: 25px;"] {
+  transform: translate(-50%, -50%) translateX(100px);
+}
+
+/*ammo*/
+#ammoVal {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  margin-right: 0px;
+}
+#ammoVal:before {
+  content: "Ammo: ";
+  font-size: 20px;
+  display: block;
+}
+#ammoDisplay {
+  background-color: var(--purple);
+  border: 4px solid var(--light-purple);
+  width: 150px;
+  letter-spacing: 0px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  text-align: center;
+}
+
+/*health*/
+#healthValue {
+  color: #fff;
+  display: flex;
+  font-size: 35px;
+  width: 150px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+}
+
+#healthValue:before {
+  content: "Health: ";
+  font-size: 20px;
+  display: block;
+}
+
+#healthValueHolder {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  position: fixed;
+  bottom: 35px;
+  right: 220px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 7px;
+  padding-top: 8px;
+  padding-left: 20px;
+  background-color: var(--purple);
+  border: 4px solid var(--light-purple);
+}
+/*hud class */
+
 #hudClassIcon {
-  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
+  display: block;
+  background: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/Sorablueava.jpg);
+  position: fixed;
+  bottom: 20px;
+  left: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hudClassIcon > img {
+  opacity: 0;
 }
 
-/*
-This css was made by TrnLinh
-If you want to make an update or fix issues please contact me:
-discord: TrnLinh#7349
-KrunkerIgn: hoanglinh0109
+/*leader board*/
 
-Thank Abyy#9768 for this comment lol 
-*/
+#leaderDisplay {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--trans-puple);
+  border: 4px solid var(--light-purple);
+}
+#leaderContainer:before {
+  content: "leader";
+  font-size: 14px;
+}
 
-/*feel free to edit anything*/
+/* counter */
+
+.topRightCounters {
+  width: max-content !important;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translate(0%, 0);
+}
+
+.countIcon {
+  border: 2px solid var(--light-purple);
+  background-color: var(--purple);
+  width: max-content;
+}
+
+
+/*end game board*/
+.tabHeader.selected {
+    color: var(--light-purple);
+    border-bottom: 0px solid transparent;
+}
+#tabHolder {
+   background-color: var(--trans-puple);
+   border: 4px solid var(--light-purple);
+}
+.tabHeader:hover {
+    color: #fff;
+    border-bottom: 0px solid #fff;
+}
+.endCard {
+
+    background-color: var(--purple);
+    border: 4px solid var(--light-purple);
+}
+.endTablePfp{
+  border:3px solid var(--light-purple);
+}
