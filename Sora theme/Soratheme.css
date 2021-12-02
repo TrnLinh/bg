@@ -473,7 +473,6 @@ input[type="color"],
 .selectorItem:hover,
 .selectorItem:focus {
   transform: scale(1.2);
-  z-index: 9999 !important;
   color: var(--purple);
   background-color: var(--trans-puple);
   border: 4px solid var(--light-purple);
