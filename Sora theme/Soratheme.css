@@ -52,8 +52,7 @@ div[data-icon="star_border"],
 #maxHP,
 #challIcon,
 .endAHolder,
-#perkHolder
- {
+#perkHolder {
   display: none !important;
 }
 
@@ -447,11 +446,10 @@ input[type="color"],
   border: 4px solid var(--light-purple) !important;
 }
 .slide {
-    border: 15px solid #25252500;
+  border: 15px solid #25252500;
 }
-.purejscarousel-btn {    
-    background-color: var(--trans) !important;
-
+.purejscarousel-btn {
+  background-color: var(--trans) !important;
 }
 
 /*class pick menu*/
@@ -563,33 +561,32 @@ div[onclick="windows[2].switchTab(3)"]:after {
 }
 #timerVal {
   font-size: 50px;
-  text-shadow: 4px 4px var(--purple)
+  text-shadow: 4px 4px var(--purple);
 }
 /* hud main */
 .weapKey {
-    display:none;
+  display: none;
 }
 .weapIcon {
-    transform: translate(-50%,-50%);
-    position:fixed;
-    left:50%;
-    bottom:-1%;
-    opacity:0 !important;
-    transition-duration: .25s;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50%;
+  bottom: -1%;
+  opacity: 0 !important;
+  transition-duration: 0.25s;
 }
 .weapIcon[style="opacity: 1;"] {
-    opacity:1 !important;
+  opacity: 1 !important;
 }
 .weapIcon[style="opacity: 1; margin-right: 25px;"] {
-    opacity:1 !important;
+  opacity: 1 !important;
 }
 .weapIcon[style="opacity: 0.7;"] {
-    transform:translate(-50%,-50%) translateY(80px);
+  transform: translate(-50%, -50%) translateY(80px);
 }
 .weapIcon[style="opacity: 0.7; margin-right: 25px;"] {
-    transform:translate(-50%,-50%) translateY(80px);
+  transform: translate(-50%, -50%) translateY(80px);
 }
-
 
 /*ammo*/
 #ammoVal {
@@ -598,10 +595,8 @@ div[onclick="windows[2].switchTab(3)"]:after {
   text-align: center;
   margin-right: 0px;
   font-size: 70px;
-  text-shadow: 1px 1px var(--purple),
-               2px 2px var(--purple),
-               3px 3px var(--purple),
-               4px 4px var(--purple);
+  text-shadow: 1px 1px var(--purple), 2px 2px var(--purple),
+    3px 3px var(--purple), 4px 4px var(--purple);
 }
 
 #ammoDisplay {
@@ -612,7 +607,7 @@ div[onclick="windows[2].switchTab(3)"]:after {
   position: fixed;
   right: 35%;
   bottom: 120px;
-  transform: translate(50%, 0)
+  transform: translate(50%, 0);
 }
 
 /*health*/
@@ -624,20 +619,17 @@ div[onclick="windows[2].switchTab(3)"]:after {
   align-content: center;
   justify-content: center;
   align-items: center;
-  text-shadow: 1px 1px var(--purple),
-               2px 2px var(--purple),
-               3px 3px var(--purple),
-               4px 4px var(--purple);
-  transform: translate(-50%, 0)
-  
+  text-shadow: 1px 1px var(--purple), 2px 2px var(--purple),
+    3px 3px var(--purple), 4px 4px var(--purple);
+  transform: translate(-50%, 0);
 }
 #healthValueHolder {
   display: flex;
   position: fixed;
   bottom: 120px;
   left: 35%;
-  background-color:transparent;
-  border:0px solid var(--light-purple);
+  background-color: transparent;
+  border: 0px solid var(--light-purple);
 }
 /*hud class */
 
@@ -668,32 +660,29 @@ div[onclick="windows[2].switchTab(3)"]:after {
 
 /* counter */
 
-
 .countIcon {
   border: 2px solid var(--light-purple);
   background-color: var(--purple);
   width: max-content;
 }
 
-
 /*end game board*/
 .tabHeader.selected {
-    color: var(--light-purple);
-    border-bottom: 0px solid transparent;
+  color: var(--light-purple);
+  border-bottom: 0px solid transparent;
 }
 #tabHolder {
-   background-color: var(--trans-puple);
-   border: 4px solid var(--light-purple);
+  background-color: var(--trans-puple);
+  border: 4px solid var(--light-purple);
 }
 .tabHeader:hover {
-    color: #fff;
-    border-bottom: 0px solid #fff;
+  color: #fff;
+  border-bottom: 0px solid #fff;
 }
 .endCard {
-
-    background-color: var(--purple);
-    border: 4px solid var(--light-purple);
+  background-color: var(--purple);
+  border: 4px solid var(--light-purple);
 }
-.endTablePfp{
-  border:3px solid var(--light-purple);
+.endTablePfp {
+  border: 3px solid var(--light-purple);
 }
