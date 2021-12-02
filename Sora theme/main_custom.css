@@ -22,9 +22,7 @@
  replace the link inside url to change avatar/img
  
  */
-#profilePicM {
-  background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
-}
+#profilePicM,
 #menuUsernameContainer {
   background-image: url(https://raw.githubusercontent.com/TrnLinh/bg/main/img/SoraAva.jpg);
 }
