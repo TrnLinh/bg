@@ -400,7 +400,6 @@ a[onclick="showWindow(13)"] {
   left: 50%;
   bottom: 8.5vh;
   transform: scale(0.8);
-  z-index: 99999 !important;
   margin-left: 37px;
 }
 
@@ -545,10 +544,7 @@ div[onclick="windows[2].switchTab(3)"]:after {
 .skinCard {
   background-color: transparent;
 }
-#loadoutName,
-#customizeContainer {
-  z-index: -2 !important;
-}
+
 /*Timer*/
 
 #timerDisplay {
