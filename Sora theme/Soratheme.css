@@ -1,4 +1,4 @@
-    :root {
+        :root {
       --light-purple: #cc94ff;
       --purple: #a358ff;
       --black: black;
@@ -727,7 +727,7 @@
     .lC-r,
     .lC-bt,
     .lC-b,
-    .lC-img,
+    #lC-img,
     .lC-t,
     .lC-l,
     #loadInfoLHolder{
@@ -778,4 +778,4 @@
         padding:10px;
         transform:skew(-10deg);
 
-    }s
+    }
