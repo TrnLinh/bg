@@ -1,0 +1,46 @@
+/* a small css for SantaClown#9431 made by TrnLinh#7349 */
+
+/*pls don't change anything bellow */
+@import url();
+/*pls dont change anything above */
+
+* {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 600;
+}
+:root {
+  --gray: #474747;
+  --ligh-gray: #9f9f9f;
+  --white: #fff;
+  --trans: #fff0;
+}
+
+/*
+ change avatar 
+ replace the link inside url to change avatar/img
+ 
+ */
+#menuUsernameContainer {
+  background-image: url(https://trnlinh.github.io/bg/img/1x1.gif);
+  /*Avatar, should be a square img*/
+}
+#menuWindow.dark {
+  background-image: url(https://trnlinh.github.io/bg/img/IMG_0253.gif) !important;
+  /*should be a 1920x1080 picture*/
+}
+
+#menuItemContainer {
+  background-image: url(https://trnlinh.github.io/bg/img/1x1.gif);
+  /* change this to change the circle img in the midle of the screen, square img*/
+}
+
+/*
+This css was made by TrnLinh
+If you want to make an update or fix issues please contact me:
+discord: TrnLinh#7349
+KrunkerIgn: hoanglinh0109
+
+Thank Abyy#9768 for this comment lol 
+*/
+
+/*feel free to edit anything*/

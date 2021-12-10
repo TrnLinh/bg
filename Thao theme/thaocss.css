@@ -1,0 +1,538 @@
+/* A css created by TrnLinh#7349*/
+
+:root {
+  --gray: #474747;
+  --ligh-gray: #9f9f9f;
+  --white: #fff;
+  --trans: #fff0;
+}
+
+* {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 600;
+}
+/*stuff */
+#lC-img,
+.lC-b,
+#loadTipsHolder,
+#loadEditrBtn,
+#aHolder,
+.menuItemTitle,
+#menuClassNameTag,
+.verticalSeparator,
+#tlInfHold,
+#mainLogo,
+#seasonLabel,
+#newsHolder,
+#voiceDisplay,
+#aContainer,
+#faceItIconM,
+#policeButton,
+#editorBtnM,
+#termsInfo,
+#rankedSoonTm,
+.setBodH[style="padding-top:15px"],
+#menuClassSubtext,
+#menuAccountUsername,
+.verticalSeparator[style="height:35px;"],
+#mailContainer,
+.pfpAction,
+.menuSocialB,
+#customizeButton > span,
+span[style="color:#fbc02d"],
+.itemCnt,
+.itemOwn,
+.selctFavBtn,
+.selctInfoBtn,
+.material-icons[style="color:#cc51f8;font-size:27px;margin-left:5px;vertical-align:top;margin-right:-5px;"] {
+  display: none !important;
+}
+
+a {
+  color: var(--ligh-gray);
+}
+/*loading screen*/
+.lC-cube,
+.lC-cube * {
+  position: relative;
+}
+.lC-cube {
+  transform: translate(0, 0);
+}
+.lC-sides {
+  animation: none;
+  transform-style: initial;
+  transform: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  --animation-duration: 1000ms;
+  width: 75px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.lC-r,
+.lC-bt,
+.lC-f,
+.lC-t,
+.lC-l {
+  height: 40%;
+  background-color: var(--ligh-gray);
+  width: calc(75px / 13);
+  animation: spinner5 var(--animation-duration) ease-in-out infinite;
+}
+@keyframes spinner5 {
+  25% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.lC-bt {
+  animation-delay: calc(var(--animation-duration) / 10);
+}
+
+.lC-t {
+  animation-delay: calc(var(--animation-duration) / 10 * 2);
+}
+
+.lC-l {
+  animation-delay: calc(var(--animation-duration) / 10 * 3);
+}
+
+.lC-f {
+  animation-delay: calc(var(--animation-duration) / 10 * 4);
+}
+
+#loadGamNm {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 80px);
+  transform: translate(-50%, 0);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0px;
+  text-align: center;
+}
+#loadGamNm {
+  font-size: 0px;
+}
+#loadGamNm:after {
+  content: "Loading...";
+  font-size: 20px;
+}
+#loadInfoRHolder {
+  font-size: 0px;
+  background-color: var(--ligh-gray);
+  padding: 20px;
+  border-radius: 4px;
+  color: var(--gray);
+}
+#loadInfoRHolder:before {
+  content: "A css created by TrnLinh#7349";
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+#loadInfoRHolder:after {
+  content: "Created for SantaClown#9431";
+  font-size: 20px;
+}
+
+/*profile*/
+/*menu card*/
+#signedInHeaderBar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-bottom-right-radius: 00px !important;
+  border: 4px solid var(--ligh-gray) !important;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  background: var(--gray);
+  width: max-content;
+  height: max-content;
+  padding: 20px 20px 0px 20px !important;
+  border-radius: 4px !important;
+}
+#signedInHeaderBar div[style="display:inline-block;"] {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+}
+#menuUsernameContainer {
+  background-image: url(https://trnlinh.github.io/bg/img/1x1.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  grid-column: 1/3;
+}
+#menuUsernameContainer > img {
+  opacity: 0;
+}
+#menuMiniProfilePic {
+  width: 100%;
+  height: 100%;
+}
+.krInfo,
+.junkInfo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.krInfo {
+  grid-column: 1/2;
+}
+#menuKRCount:after {
+  content: "Kr";
+}
+#menuJNKCount:after {
+  content: "Jk";
+}
+.junkInfo {
+  justify-content: flex-end;
+}
+
+.progressBar {
+  padding: 0px;
+  height: 14px;
+  border: 2px solid var(--ligh-gray);
+  background: var(--trans);
+  border-radius: 0px;
+  grid-column: -3/-1;
+}
+.progressBarInner {
+  background: var(--ligh-gray);
+  border-radius: 0px;
+}
+#mLevelCont {
+  display: flex;
+  background-color: var(--trans);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  justify-content: space-between;
+}
+#mLevelContV:before {
+  content: "Lv: ";
+  font-size: 25px;
+}
+
+/*main profile*/
+#menuWindow.dark {
+  background-color: #353535;
+  overflow-y: auto;
+  width: 980px;
+  border: 4px solid var(--ligh-gray);
+  border-radius: 5px;
+
+  background-image: url(https://trnlinh.github.io/bg/img/IMG_0253.gif) !important;
+  background-size: cover;
+}
+div[onclick="SOUND.play(`select_0`,0.15);windows[4].switchTab(2)"] {
+  display: none;
+}
+span[style="color:#fbc02d;font-size:42px;vertical-align:bottom"],
+span[style="color:#96ff50;font-size:42px;vertical-align:bottom"] {
+  color: white !important;
+}
+.setHed {
+  border: 0;
+  background-color: transparent;
+  font-size: 24px;
+}
+.setHed:hover {
+  background: transparent;
+}
+#profilePicM {
+  border: 4px solid lightgray;
+  border-radius: 5px;
+  background-color: #6d6d6d;
+}
+.xpBarB {
+  height: 100%;
+  background: var(--ligh-gray);
+}
+.xpBar {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(0 0 0 / 0%);
+  border-radius: 0px;
+  border: 4px solid var(--ligh-gray);
+}
+.xpBarV {
+  top: 50%;
+  left: 0;
+  font-size: 16px;
+  line-height: 0px;
+  text-shadow: 0 0 black;
+}
+.settName,
+.settNameSmall {
+  border-bottom: 0;
+  margin-bottom: 18px;
+}
+.floatR,
+a,
+span[style="color:#fbc02d"] {
+  color: white !important;
+}
+
+.pSt {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0 !important;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+div[style="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 0.8);"] {
+  border-top: 0 !important;
+}
+
+.pfpAction:hover {
+  opacity: 0 !important;
+}
+
+.updDisN,
+.settingsBtn {
+  background: var(--ligh-gray) !important;
+}
+input:checked + .slider,
+.subPassChg,
+.sliderM,
+input:checked + .sliderSml,
+input:checked + .slider2,
+#hostMenuBtn {
+  background-color: var(--gray) !important;
+}
+.subPassChg:hover {
+  background: var(--ligh-gray);
+}
+.setHedS {
+  border: 0px solid var(--ligh-gray);
+  background-color: var(--trans);
+}
+/*setting*/
+.settingsHeader,
+.serverHeader,
+#itemSearchH {
+  background: var(--trans);
+}
+input[type="color"],
+.quickJoin {
+  border: 4px solid var(--gray);
+}
+/*menu*/
+#menuItemContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  background-image: url(https://trnlinh.github.io/bg/img/1x1.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#clientExit {
+  display: block;
+}
+.menuItem {
+  width: 3em;
+  height: 3em;
+  position: relative;
+}
+div[onclick="SOUND.play(`select_0`,0.15);showWindow(5)"] {
+  bottom: 4em;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+div[onclick="SOUND.play(`select_0`,0.15);showWindow(14)"] {
+  bottom: 4em;
+  left: 100%;
+  transform: translate(-55%, 0);
+}
+div[onclick="SOUND.play(`select_0`,0.15);windows[32].openHome()"] {
+  top: 2em;
+  left: 105%;
+  transform: translate(0, 0);
+}
+div[onclick="SOUND.play(`select_0`,0.15);window.open('/social.html', '_blank')"] {
+  left: 100%;
+  top: 9em;
+  transform: translate(-55%, 0);
+}
+div[onclick="SOUND.play(`select_0`,0.15);showGames()"] {
+  left: 0;
+  bottom: 13em;
+  transform: translate(-50%, 0);
+}
+div[onclick="showWindow(1);SOUND.play(`select_0`,0.15);"] {
+  right: 1em;
+  transform: translate(-55%, 0);
+}
+div[onclick="SOUND.play(`select_0`,0.15);showWindow(4)"] {
+  bottom: 7em;
+  right: 15%;
+  transform: translate(-55%, 0);
+}
+div[onclick="SOUND.play(`select_0`,0.15);clientExitPopup()"] {
+  top: 0;
+  left: 50%;
+  transform: translate(-65%, 0);
+}
+.material-icons-outlined {
+  color: #a6a6a6 !important;
+}
+
+/*chat*/
+
+#uiBase.onMenu #chatHolder {
+  left: 20px;
+  bottom: 20px;
+}
+#chatInputHolder {
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: var(--gray);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px var(--ligh-gray);
+}
+
+#chatList {
+  background-color: rgb(0 0 0 / 0%);
+}
+.chatItem {
+  background-color: var(--gray);
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px var(--ligh-gray);
+}
+
+/* sub menu */
+#subLogoButtons {
+  bottom: 100px;
+  background-color: var(--gray);
+  padding: 10px 20px;
+  box-shadow: 5px 5px var(--ligh-gray);
+  border-radius: 5px;
+}
+.buttonP,
+.buttonR,
+.buttonO,
+.buttonPI {
+  border: 0 !important;
+  background-color: var(--trans);
+  color: var(--ligh-gray);
+}
+#subLogoButtons > .button:hover {
+  border: 0px solid #fff !important;
+  color: #fff !important;
+
+  transform: translateY(-10px) scale(1.2);
+}
+
+/* Sever, fps and ping */
+.headerBarRight {
+  top: 20px;
+  right: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: var(--gray);
+  box-shadow: 5px 5px var(--ligh-gray);
+}
+#uiBase.onMenu #spectButton {
+  top: initial;
+  bottom: 20vh;
+}
+/* Customize */
+#menuClassContainer {
+  position: fixed;
+  right: 50px;
+  top: 25%;
+
+  width: 400px;
+  height: 550px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  border: 7px solid var(--ligh-gray);
+}
+#menuClassName {
+  margin-top: 110px;
+  text-shadow: 0 0 black;
+}
+.bigShadowT,
+.selectorLabel,
+.blackShad {
+  text-shadow: 0 0 black !important;
+}
+.buttonG {
+  border: 4px solid var(--ligh-gray) !important;
+}
+
+/*other page*/
+#menuWindow[style="overflow-y: auto; width: 1950px;"] {
+  width: 1500px !important;
+}
+.creatorCodeBtn,
+.loadoutBtn {
+  background-color: var(--gray) !important;
+}
+span[style="color:#cc51f8;font-size:42px;vertical-align:bottom"] {
+  color: white !important;
+}
+.slide {
+  border: 15px solid var(--trans);
+}
+
+/*customize Button menu*/
+#menuWindow[style="overflow-y: auto; width: 810px;"] {
+  width: 1000px !important;
+}
+#selectorContainer {
+  background-color: var(--trans);
+}
+.selectorItem {
+  background-color: var(--trans);
+  border: 4px solid var(--ligh-gray);
+}
+.selectorItem .selectorIcon {
+  filter: grayscale(100%);
+}
+/*class*/
+.classCard {
+  text-shadow: 0 0 black;
+  filter: drop-shadow(0 0 0.15rem #000000);
+  background-color: #b5b5b500;
+}
+.classXPBar {
+  background-color: rgb(255 255 255 / 0%);
+  border: 3px solid var(--ligh-gray);
+  margin: 0;
+}
+.clsXPBarC {
+  margin: 0px;
+  background-color: var(--ligh-gray);
+  height: 28px;
+  margin-top: -1px;
+}
+/*loadout*/
+.skinCard {
+  background-color: rgb(255 255 255 / 0%);
+}
+.itemSea,
+.classWeap {
+  color: transparent !important;
+}
