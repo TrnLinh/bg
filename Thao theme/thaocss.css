@@ -1,10 +1,8 @@
-/* A css created by TrnLinh#7349*/
-
-:root {
-  --gray: #474747;
-  --ligh-gray: #9f9f9f;
-  --white: #fff;
-  --trans: #fff0;
+:root{
+    --gray: #474747;
+    --ligh-gray: #9f9f9f;
+    --white: #fff;
+    --trans: #fff0;
 }
 
 * {
@@ -17,12 +15,14 @@
 #loadTipsHolder,
 #loadEditrBtn,
 #aHolder,
+
 .menuItemTitle,
 #menuClassNameTag,
 .verticalSeparator,
 #tlInfHold,
 #mainLogo,
 #seasonLabel,
+.endAHolder,
 #newsHolder,
 #voiceDisplay,
 #aContainer,
@@ -44,183 +44,191 @@ span[style="color:#fbc02d"],
 .itemOwn,
 .selctFavBtn,
 .selctInfoBtn,
-.material-icons[style="color:#cc51f8;font-size:27px;margin-left:5px;vertical-align:top;margin-right:-5px;"] {
-  display: none !important;
+
+.material-icons[style="color:#cc51f8;font-size:27px;margin-left:5px;vertical-align:top;margin-right:-5px;"]
+{
+    display: none !important;
 }
 
-a {
-  color: var(--ligh-gray);
+a{
+	color: var(--ligh-gray);
 }
 /*loading screen*/
-.lC-cube,
-.lC-cube * {
-  position: relative;
-}
+.lC-cube, .lC-cube * {position: relative;}
 .lC-cube {
-  transform: translate(0, 0);
+    transform: translate(0,0);
 }
 .lC-sides {
-  animation: none;
-  transform-style: initial;
-  transform: none;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  --animation-duration: 1000ms;
-  width: 75px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+    animation: none;
+    transform-style: initial;
+    transform: none;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    --animation-duration: 1000ms;
+    width: 75px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 .lC-r,
 .lC-bt,
 .lC-f,
 .lC-t,
-.lC-l {
+.lC-l{
   height: 40%;
   background-color: var(--ligh-gray);
   width: calc(75px / 13);
   animation: spinner5 var(--animation-duration) ease-in-out infinite;
 }
-@keyframes spinner5 {
-  25% {
-    transform: scaleY(2);
-  }
+	@keyframes spinner5 {
+			25% {
+				transform: scaleY(2);
+			}
 
-  50% {
-    transform: scaleY(1);
-  }
-}
+			50% {
+				transform: scaleY(1);
+			}
+		}
+	
 
-.lC-bt {
-  animation-delay: calc(var(--animation-duration) / 10);
-}
+	.lC-bt{
+		
+		animation-delay: calc(var(--animation-duration) / 10);
+	}
 
-.lC-t {
-  animation-delay: calc(var(--animation-duration) / 10 * 2);
-}
+	.lC-t{
+		
+		animation-delay: calc(var(--animation-duration) / 10 * 2);
+	}
 
-.lC-l {
-  animation-delay: calc(var(--animation-duration) / 10 * 3);
-}
+	.lC-l{
+		
+		animation-delay: calc(var(--animation-duration) / 10 * 3);
+	}
 
-.lC-f {
-  animation-delay: calc(var(--animation-duration) / 10 * 4);
+	.lC-f {
+		
+		animation-delay: calc(var(--animation-duration) / 10 * 4);
+	}
 }
 
 #loadGamNm {
-  position: absolute;
-  left: 50%;
-  top: calc(50% + 80px);
-  transform: translate(-50%, 0);
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0px;
-  text-align: center;
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 80px);
+    transform: translate(-50%,0);
+    color: rgba(255,255,255,.6);
+    font-size: 0px;
+    text-align: center
+
 }
-#loadGamNm {
-  font-size: 0px;
+#loadGamNm{
+    font-size: 0px;
 }
-#loadGamNm:after {
-  content: "Loading...";
-  font-size: 20px;
+#loadGamNm:after{
+    content: 'Loading...';
+    font-size: 20px;
 }
-#loadInfoRHolder {
-  font-size: 0px;
-  background-color: var(--ligh-gray);
-  padding: 20px;
-  border-radius: 4px;
-  color: var(--gray);
+#loadInfoRHolder{
+	font-size: 0px;
+	background-color: var(--ligh-gray);
+	padding: 20px;
+	border-radius: 4px;
+	color: var(--gray)
 }
-#loadInfoRHolder:before {
-  content: "A css created by TrnLinh#7349";
-  font-size: 18px;
-  margin-bottom: 10px;
-  display: block;
+#loadInfoRHolder:before{
+	content: 'A css created by TrnLinh#7349';
+	font-size:18px;
+	margin-bottom: 10px;
+	display:block
 }
-#loadInfoRHolder:after {
-  content: "Created for SantaClown#9431";
-  font-size: 20px;
+#loadInfoRHolder:after{
+	content: 'Created for SantaClown#9431';
+	font-size: 20px;
 }
 
 /*profile*/
 /*menu card*/
 #signedInHeaderBar {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  border-bottom-right-radius: 00px !important;
-  border: 4px solid var(--ligh-gray) !important;
-  display: grid;
-  grid-template-rows: 1fr max-content;
-  background: var(--gray);
-  width: max-content;
-  height: max-content;
-  padding: 20px 20px 0px 20px !important;
-  border-radius: 4px !important;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-bottom-right-radius: 00px!important;
+    border:4px solid var(--ligh-gray) !important;
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    background: var(--gray);
+    width: max-content;
+    height: max-content;
+    padding: 20px 20px 0px 20px!important;
+    border-radius: 4px !important;
+
 }
-#signedInHeaderBar div[style="display:inline-block;"] {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr;
+#signedInHeaderBar div[style="display:inline-block;"]{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
 }
-#menuUsernameContainer {
+#menuUsernameContainer{
   background-image: url(https://trnlinh.github.io/bg/img/1x1.gif);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 200px;
+  width:200px;
   grid-column: 1/3;
 }
-#menuUsernameContainer > img {
-  opacity: 0;
+#menuUsernameContainer > img{
+	opacity: 0;
 }
-#menuMiniProfilePic {
-  width: 100%;
-  height: 100%;
+#menuMiniProfilePic{
+	width: 100%;
+	height: 100%;
 }
 .krInfo,
 .junkInfo {
-  display: flex;
-  align-items: center;
-  margin: 10px 0px;
+	display: flex;
+	align-items: center;
+	margin:10px 0px;
+
 }
 .krInfo {
-  grid-column: 1/2;
+    grid-column: 
 }
-#menuKRCount:after {
-  content: "Kr";
+#menuKRCount:after{
+	content: 'Kr';
 }
-#menuJNKCount:after {
-  content: "Jk";
+#menuJNKCount:after{
+	content: 'Jk'
 }
-.junkInfo {
-  justify-content: flex-end;
+.junkInfo{
+	justify-content: flex-end;
 }
 
-.progressBar {
-  padding: 0px;
-  height: 14px;
-  border: 2px solid var(--ligh-gray);
-  background: var(--trans);
-  border-radius: 0px;
-  grid-column: -3/-1;
+.progressBar{
+    padding: 0px;
+    height: 14px;
+    border: 2px solid var(--ligh-gray);
+    background: var(--trans);
+    border-radius: 0px;
+    grid-column: -3/-1;
 }
 .progressBarInner {
-  background: var(--ligh-gray);
-  border-radius: 0px;
+    background: var(--ligh-gray) ;   
+    border-radius: 0px;
 }
 #mLevelCont {
-  display: flex;
-  background-color: var(--trans);
-  padding: 0;
-  margin: 0;
-  border: 0;
-  justify-content: space-between;
+    display: flex;
+    background-color: var(--trans);
+    padding: 0;
+    margin:0;
+    border: 0;
+    justify-content: space-between;
 }
 #mLevelContV:before {
-  content: "Lv: ";
-  font-size: 25px;
+    content: 'Lv: ';
+    font-size: 25px
 }
 
 /*main profile*/
@@ -230,7 +238,7 @@ a {
   width: 980px;
   border: 4px solid var(--ligh-gray);
   border-radius: 5px;
-
+  
   background-image: url(https://trnlinh.github.io/bg/img/IMG_0253.gif) !important;
   background-size: cover;
 }
@@ -246,8 +254,8 @@ span[style="color:#96ff50;font-size:42px;vertical-align:bottom"] {
   background-color: transparent;
   font-size: 24px;
 }
-.setHed:hover {
-  background: transparent;
+.setHed:hover{
+	background:transparent;
 }
 #profilePicM {
   border: 4px solid lightgray;
@@ -255,22 +263,22 @@ span[style="color:#96ff50;font-size:42px;vertical-align:bottom"] {
   background-color: #6d6d6d;
 }
 .xpBarB {
-  height: 100%;
-  background: var(--ligh-gray);
+    height: 100%;
+    background: var(--ligh-gray);
 }
 .xpBar {
-  margin: 0px;
-  padding: 0px;
-  background-color: rgb(0 0 0 / 0%);
-  border-radius: 0px;
-  border: 4px solid var(--ligh-gray);
+    margin: 0px;   
+    padding:0px;
+    background-color: rgb(0 0 0 / 0%);
+    border-radius: 0px;
+    border: 4px solid var(--ligh-gray)   
 }
 .xpBarV {
-  top: 50%;
-  left: 0;
-  font-size: 16px;
-  line-height: 0px;
-  text-shadow: 0 0 black;
+    top: 50%;
+    left: 0;
+    font-size: 16px;
+    line-height: 0px;
+    text-shadow: 0 0 black;
 }
 .settName,
 .settNameSmall {
@@ -300,37 +308,38 @@ div[style="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 
 }
 
 .pfpAction:hover {
-  opacity: 0 !important;
+    opacity: 0 !important;
 }
 
+
 .updDisN,
-.settingsBtn {
-  background: var(--ligh-gray) !important;
+.settingsBtn{
+    background:var(--ligh-gray) !important;
 }
-input:checked + .slider,
+input:checked+.slider,
 .subPassChg,
 .sliderM,
-input:checked + .sliderSml,
-input:checked + .slider2,
-#hostMenuBtn {
-  background-color: var(--gray) !important;
+input:checked+.sliderSml,
+input:checked+.slider2,
+#hostMenuBtn{
+    background-color: var(--gray) !important
 }
-.subPassChg:hover {
-  background: var(--ligh-gray);
+.subPassChg:hover{
+    background: var(--ligh-gray)
 }
-.setHedS {
-  border: 0px solid var(--ligh-gray);
-  background-color: var(--trans);
+.setHedS{
+    border: 0px solid var(--ligh-gray);
+    background-color: var(--trans);
 }
 /*setting*/
 .settingsHeader,
 .serverHeader,
-#itemSearchH {
-  background: var(--trans);
+#itemSearchH{
+    background: var(--trans)
 }
-input[type="color"],
-.quickJoin {
-  border: 4px solid var(--gray);
+input[type=color],
+.quickJoin{
+    border: 4px solid var(--gray)
 }
 /*menu*/
 #menuItemContainer {
@@ -397,142 +406,316 @@ div[onclick="SOUND.play(`select_0`,0.15);clientExitPopup()"] {
   color: #a6a6a6 !important;
 }
 
-/*chat*/
+/*chat*/ 
 
 #uiBase.onMenu #chatHolder {
-  left: 20px;
-  bottom: 20px;
+    left: 20px;
+    bottom: 20px
 }
+#uiBase.onGame #chatHolder {
+    left: 20px;
+    bottom:20px
+}
+
 #chatInputHolder {
-  font-size: 15px;
-  box-sizing: border-box;
-  background-color: var(--gray);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 5px 5px var(--ligh-gray);
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: var(--gray);
+    border: 2px solid rgba(0,0,0,.1);
+    box-shadow: 5px 5px var(--ligh-gray);
 }
 
 #chatList {
-  background-color: rgb(0 0 0 / 0%);
+    background-color: rgb(0 0 0 / 0%);
+
 }
 .chatItem {
-  background-color: var(--gray);
-  padding: 10px 15px;
-  border-radius: 5px;
-  box-shadow: 5px 5px var(--ligh-gray);
+
+    background-color: var(--gray);
+    padding:10px 15px;
+    border-radius: 5px;
+   box-shadow: 5px 5px var(--ligh-gray)
 }
 
 /* sub menu */
 #subLogoButtons {
-  bottom: 100px;
-  background-color: var(--gray);
-  padding: 10px 20px;
-  box-shadow: 5px 5px var(--ligh-gray);
-  border-radius: 5px;
+	bottom: 20px;
+    background-color: var(--gray);
+    padding: 10px 20px;
+    box-shadow: 5px 5px var(--ligh-gray);
+    border-radius: 5px
 }
 .buttonP,
 .buttonR,
 .buttonO,
-.buttonPI {
-  border: 0 !important;
-  background-color: var(--trans);
-  color: var(--ligh-gray);
+.buttonPI{
+	border: 0 !important;
+	background-color: var(--trans);
+	color: var(--ligh-gray)
 }
 #subLogoButtons > .button:hover {
-  border: 0px solid #fff !important;
-  color: #fff !important;
-
-  transform: translateY(-10px) scale(1.2);
+    border: 0px solid #fff!important;
+    color: #fff!important;
+    
+    transform: translateY(-10px) scale(1.2);
 }
 
 /* Sever, fps and ping */
 .headerBarRight {
-  top: 20px;
-  right: 20px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: var(--gray);
-  box-shadow: 5px 5px var(--ligh-gray);
+    top: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: var(--gray);
+    box-shadow: 5px 5px var(--ligh-gray)
 }
 #uiBase.onMenu #spectButton {
-  top: initial;
-  bottom: 20vh;
+    top: initial;
+    bottom: 20vh
+    
 }
 /* Customize */
 #menuClassContainer {
-  position: fixed;
-  right: 50px;
-  top: 25%;
+	position: fixed;
+    right: 50px;
+    top: 25%;
 
-  width: 400px;
-  height: 550px;
-  background-color: var(--gray);
-  border-radius: 10px;
-  border: 7px solid var(--ligh-gray);
+    width: 400px;
+    height: 550px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    border:7px solid var(--ligh-gray)
+
 }
-#menuClassName {
-  margin-top: 110px;
-  text-shadow: 0 0 black;
+#menuClassName{
+    margin-top:110px;
+    text-shadow: 0 0 black
 }
 .bigShadowT,
 .selectorLabel,
-.blackShad {
-  text-shadow: 0 0 black !important;
+.blackShad{
+    text-shadow: 0 0 black !important;
 }
-.buttonG {
-  border: 4px solid var(--ligh-gray) !important;
+.buttonG{
+    border: 4px solid var(--ligh-gray) !important;
+    
 }
 
 /*other page*/
-#menuWindow[style="overflow-y: auto; width: 1950px;"] {
-  width: 1500px !important;
+#menuWindow[style="overflow-y: auto; width: 1950px;"]{
+	width:1500px !important
 }
 .creatorCodeBtn,
-.loadoutBtn {
-  background-color: var(--gray) !important;
+.loadoutBtn{
+	background-color: var(--gray)!important
 }
-span[style="color:#cc51f8;font-size:42px;vertical-align:bottom"] {
-  color: white !important;
+span[style="color:#cc51f8;font-size:42px;vertical-align:bottom"]{
+	color: white !important;
 }
-.slide {
-  border: 15px solid var(--trans);
+.slide{
+	border:15px solid var(--trans);
 }
 
 /*customize Button menu*/
-#menuWindow[style="overflow-y: auto; width: 810px;"] {
-  width: 1000px !important;
-}
-#selectorContainer {
-  background-color: var(--trans);
+#menuWindow[style="overflow-y: auto; width: 810px;"]{
+	width: 1000px!important;
+ }
+ #selectorContainer {
+    background-color: var(--trans);
+
 }
 .selectorItem {
-  background-color: var(--trans);
-  border: 4px solid var(--ligh-gray);
+    background-color: var(--trans);
+    border: 4px solid var(--ligh-gray)
 }
 .selectorItem .selectorIcon {
-  filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 /*class*/
 .classCard {
-  text-shadow: 0 0 black;
-  filter: drop-shadow(0 0 0.15rem #000000);
-  background-color: #b5b5b500;
+    text-shadow: 0 0 black;
+    filter: drop-shadow(0 0 0.15rem #000000);
+    background-color: #b5b5b500;
+
 }
 .classXPBar {
-  background-color: rgb(255 255 255 / 0%);
-  border: 3px solid var(--ligh-gray);
-  margin: 0;
+    background-color: rgb(255 255 255 / 0%);
+    border: 3px solid var(--ligh-gray);
+    margin: 0;
 }
 .clsXPBarC {
-  margin: 0px;
-  background-color: var(--ligh-gray);
-  height: 28px;
-  margin-top: -1px;
+    margin: 0px;
+    background-color: var(--ligh-gray);
+    height: 28px;
+    margin-top: -1px;
 }
 /*loadout*/
 .skinCard {
-  background-color: rgb(255 255 255 / 0%);
+    background-color: rgb(255 255 255 / 0%);   
 }
 .itemSea,
-.classWeap {
-  color: transparent !important;
+.classWeap{
+	color:transparent !important;
 }
+
+/*hud*/
+/*hud remove*/
+
+#timerIcon,
+#healthBar,
+#challIcon,
+#maxHP,
+#ammoIcon,
+#ammoMax {
+    display: none !important
+}
+
+/*main hud*/
+#timerDisplay {
+    position: fixed;
+    top:20px;
+    left: 50%;
+    transform:translate(-50%, 0);
+    background-color: var(--gray);
+    box-shadow: 5px 5px var(--ligh-gray);
+
+}
+
+#timerVal {
+    font-size: 50px;
+}
+#hudClassIcon{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: url(https://trnlinh.github.io/bg/img/1x1.gif);
+    background-size:cover;
+}
+
+#hudClassIcon > img {
+    opacity: 0;
+
+}
+#healthValueHolder {
+    background-color: var(--gray);
+    box-shadow: 5px 5px var(--ligh-gray);
+    position: fixed;
+    left: 30%;
+    bottom: 50px;
+    transform:translate(50%, 0);
+}
+#healthValue {
+    font-size: 65px;
+}
+
+ /*ammo*/
+    #ammoDisplay {
+        background-color: transparent !important;
+        width: 50px;
+        height: 5px;
+        top: calc(50% + 35px);
+        left: 48.5%
+    }
+
+    #ammoVal {
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      margin-right: 0px;
+      font-size: 65px;
+      position: fixed;
+      right: 30%;
+      bottom:50px;
+      transform: translate(-50%,0);
+      background-color: var(--gray);
+      box-shadow: 5px 5px var(--ligh-gray);
+      width:110px;
+      border-radius:5px;
+      padding: 3px;
+      margin-bottom: 9px;
+      padding-right: 7px;
+      padding-left: 9px
+    }
+    #ammoDisplay {
+        background-color: transparent;
+        letter-spacing: 1px;
+        border-radius: 2px;
+        position: fixed;
+        right: 35%;
+        bottom: 120px;
+        margin-bottom: 10%;
+        padding: 0;
+        padding-top: 0;
+        padding-left: 0;
+        transform: none;
+        background-image: url(https://github.com/TrnLinh/bg/blob/main/img/Untitled.png?raw=true)
+
+    }
+
+/* hud main */
+    .weapKey {
+      display: none;
+    }
+    .weapIcon {
+      transform: translate(-50%, -50%);
+      position: fixed;
+      left: 50%;
+      bottom: -1%;
+      opacity: 0 !important;
+      transition-duration: 0.25s;
+
+    }
+    .weapIcon[style="opacity: 1;"] {
+      opacity: 1 !important;
+    }
+    .weapIcon[style="opacity: 1; margin-right: 25px;"] {
+      opacity: 1 !important;
+    }
+    .weapIcon[style="opacity: 0.7;"] {
+      transform: translate(-50%, -50%) translateY(0px);
+    }
+    .weapIcon[style="opacity: 0.7; margin-right: 25px;"] {
+      transform: translate(-50%, -50%) translateY(0px);
+    }
+
+
+/*leader board*/
+
+ #leaderDisplay {
+      color: rgba(255, 255, 255, 0.7);
+      background-color: var(--gray);
+      box-shadow: 5px 5px var(--ligh-gray);
+    }
+    #leaderContainer:before {
+      content: "leader";
+      font-size: 14px;
+      border-bottom: 3px solid var(--ligh-gray)
+      width: max-content;
+   }
+/* counter */
+
+    .countIcon {
+      box-shadow: 2px 2px var(--ligh-gray);
+      background-color: var(--gray);
+      width: max-content;
+    }
+ /*end game board*/
+    .tabHeader.selected {
+      color: var(--ligh-gray);
+      border-bottom: 0px solid transparent;
+    }
+    #tabHolder {
+      background-color: var(--gray);
+      border: 4px solid var(--ligh-gray);
+    }
+    .tabHeader:hover {
+      color: #fff;
+      border-bottom: 0px solid #fff;
+    }
+    .endCard {
+      background-color: var(--gray);
+      box-shadow: 10px 10px var(--ligh-gray)
+    }
+    .endTablePfp {
+     box-shadow: 3px 3px var(--ligh-gray)
+    }
