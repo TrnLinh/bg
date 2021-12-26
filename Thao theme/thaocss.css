@@ -163,7 +163,7 @@ a{
     grid-template-rows: 1fr max-content;
     background: var(--gray);
     width: max-content;
-    height: max-content;
+    height: 15vh;
     padding: 20px 20px 0px 20px!important;
     border-radius: 4px !important;
 
