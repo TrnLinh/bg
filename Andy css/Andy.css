@@ -1,0 +1,164 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --trans: #ffffff00;
+}
+
+/* Removal css by Anvy  */
+#clientExit,
+#aMerger,
+#rankedSoonTm,
+#newsHolder,
+#youNewDiv,
+#streakCount,
+#onetrust-consent-sdk,
+.weapKey,
+#aHolder,
+.imageButton,
+#editorBtnM,
+#scoreCount .material-icons,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.leaderScore,
+#deathCount,
+#uiBase.onGame #chatHolder,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+#streakIcon,
+.settingsBtn[onclick="openOneTrust()"],
+.menuSocialB,
+#bottomLeftHolder,
+#curGameInfo,
+#timerIcon,
+#curGameInfo,
+.weapIcon,
+#killsIcon,
+#ammoIcon {
+  display: none !important;
+}
+
+.setSugBox2 {
+  display: none;
+}
+
+/*hud*/
+
+#timerDisplay {
+  background: var(--trans);
+  position: fixed;
+  top: 50px;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+#timerVal {
+  color: var(--white);
+  font-size: 50px;
+  text-shadow: 0 0 0 var(--black), 1px 0 0 var(--black), -1px 0 var(--black),
+    0 -1px var(--black), 0 1px var(--black), 1px 1px var(--black),
+    1px -1px var(--black), -1px 1px var(--black), -1px -1px var(--black),
+    0 2px var(--black), 0 -2px var(--black), 2px 0 var(--black),
+    -2px 0 var(--black), 1px 2px var(--black), -1px 2px var(--black),
+    1px -2px var(--black), -1px -2px var(--black), 2px 2px var(--black),
+    -2px 2px var(--black), 2px -2px var(--black), -2px -2px var(--black),
+    0 0 2px var(--black), 0 0 2px var(--black), 0 0 2px var(--black);
+}
+
+#ammoDisplay[style*="background-size: 0%;"] {
+  background-size: 100% !important;
+}
+
+#ammoDisplay {
+  padding: 0 !important;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 150px;
+  width: 400px;
+  height: 70px;
+  background-image: linear-gradient(#7ccbcf, #7ccbcf);
+  background-color: #000;
+  border-radius: 100px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 2px solid gray;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#ammoVal,
+#ammoMax {
+  text-shadow: 0 0 0 var(--black), 1px 0 0 var(--black), -1px 0 var(--black),
+    0 -1px var(--black), 0 1px var(--black), 1px 1px var(--black),
+    1px -1px var(--black), -1px 1px var(--black), -1px -1px var(--black),
+    0 2px var(--black), 0 -2px var(--black), 2px 0 var(--black),
+    -2px 0 var(--black), 1px 2px var(--black), -1px 2px var(--black),
+    1px -2px var(--black), -1px -2px var(--black), 2px 2px var(--black),
+    -2px 2px var(--black), 2px -2px var(--black), -2px -2px var(--black),
+    0 0 2px var(--black), 0 0 2px var(--black), 0 0 2px var(--black);
+}
+
+#ammoVal {
+  color: var(--white);
+  right: 0;
+  font-size: 35px;
+}
+
+#ammoMax {
+  display: inline-block;
+  color: #fff !important;
+  font-size: 35px;
+}
+
+#topRight {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: max-content;
+}
+#leaderDisplay {
+  text-align: left;
+  float: initial;
+  position: relative;
+  background: var(--trans);
+  width: 100%;
+}
+
+.debugInfo {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+}
+
+.topRightCounters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal,
+#kdVal {
+  color: var(--white) !important;
+}
+.countIcon {
+  background: var(--trans);
+  color: var(--white) !important;
+}
+
+#killsVal:before {
+  content: "Kill count: ";
+}
