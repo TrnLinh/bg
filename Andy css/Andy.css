@@ -2,6 +2,7 @@
   --white: #fff;
   --black: #000;
   --trans: #ffffff00;
+  --gradient: linear-gradient(#7ccbcf, #7ccbcf);
 }
 
 /* Removal css by Anvy  */
@@ -40,7 +41,8 @@
 #curGameInfo,
 .weapIcon,
 #killsIcon,
-#ammoIcon {
+#ammoIcon,
+#killCount {
   display: none !important;
 }
 
@@ -53,14 +55,14 @@
 #timerDisplay {
   background: var(--trans);
   position: fixed;
-  top: 50px;
+  top: 20px;
   right: 50%;
   transform: translate(50%, 0);
 }
 
 #timerVal {
   color: var(--white);
-  font-size: 50px;
+  font-size: 35px;
   text-shadow: 0 0 0 var(--black), 1px 0 0 var(--black), -1px 0 var(--black),
     0 -1px var(--black), 0 1px var(--black), 1px 1px var(--black),
     1px -1px var(--black), -1px 1px var(--black), -1px -1px var(--black),
@@ -80,10 +82,10 @@
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: 150px;
+  bottom: 100px;
   width: 400px;
   height: 70px;
-  background-image: linear-gradient(#7ccbcf, #7ccbcf);
+  background-image: var(--gradient);
   background-color: #000;
   border-radius: 100px;
   text-align: center;
@@ -158,7 +160,10 @@
   background: var(--trans);
   color: var(--white) !important;
 }
+#scoreCount{
+    display: block !important;
+}
 
-#killsVal:before {
-  content: "Kill count: ";
+#scoreCount:before{
+    content: 'Kill count';
 }
